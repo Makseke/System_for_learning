@@ -5,6 +5,13 @@
     <title></title>
 </head>
 <body>
-<h1>Hi Makseke</h1>
+<h1>Объявление</h1>
+{% for nn in newsb %}
+<div>
+    <h2>{{nn.title}}</h2>
+    <p>{{nn.content}}</p>
+    <p>{{nn.published|date:"d.m.Y H:i"}}</p>
+</div>
+{% endfor %}
 </body>
 </html>

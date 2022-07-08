@@ -19,6 +19,6 @@ from SFL import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lol/', views.homePageView),
-    path('', include('SFL.urls'))
+    path('HOME/', include('SFL.urls')),
+    path('', views.homePageView)
 ]
